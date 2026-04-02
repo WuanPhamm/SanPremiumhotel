@@ -1,0 +1,58 @@
+# ======================
+# 🔧 OS
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# 🧠 IDE (Eclipse / IntelliJ)
+# ======================
+.project
+.classpath
+.settings/
+.idea/
+*.iml
+
+# ======================
+# ☕ Java / Maven
+# ======================
+target/
+*.class
+*.log
+
+# Maven Wrapper (có thể giữ nếu dùng)
+.mvn/
+#mvnw
+#mvnw.cmd
+
+# ======================
+# 🌐 Server (Tomcat)
+# ======================
+/.metadata/
+*.war
+*.ear
+
+# ======================
+# 🔐 Config (tránh lộ thông tin)
+# ======================
+application.properties
+application.yml
+
+# ======================
+# 📦 Upload / temp
+# ======================
+uploads/
+temp/
+*.tmp
+
+# ======================
+# 🧾 Database
+# ======================
+*.sql
+*.db
+
+# ======================
+# 🔑 Keys
+# ======================
+*.pem
+*.key
