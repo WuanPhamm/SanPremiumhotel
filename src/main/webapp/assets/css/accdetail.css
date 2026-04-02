@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+.main{
+	background-color: #e9ecef !important;
+}
+/* ===== 🌿 Chủ đề xanh lá cho phần Profile ===== */
+.pagetitle{
+	background-color: #e9ecef !important;
+	padding-left:100px;
+	padding-top:27px;
+}
+/* Toàn bộ nền trang profile */
+.section.profile {
+  background-color: #e9ecef !important;
+  padding: 30px 0;
+}
+
+/* Thẻ card nền trắng nổi bật trên nền xám */
+.section.profile .card {
+  background-color: #fff !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border: 1px solid #dee2e6;
+}
+
+/* Tiêu đề và nhãn chữ màu xanh lá */
+.section.profile h1,
+.section.profile h2,
+.section.profile h3,
+.section.profile h5,
+.section.profile label,
+.section.profile a,
+.section.profile .nav-link,
+.section.profile .form-check-label {
+  color: #198754 !important;
+}
+
+/* Tab navigation */
+.section.profile .nav-tabs .nav-link.active {
+  color: #198754 !important;
+  border-color: #198754 !important;
+  background-color: #e9ecef !important;
+}
+.section.profile .nav-tabs .nav-link:hover {
+  color: #157347 !important;
+}
+
+/* Nút chính */
+.section.profile .btn-primary {
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+.section.profile .btn-primary:hover,
+.section.profile .btn-primary:focus {
+  background-color: #157347 !important;
+  border-color: #157347 !important;
+  color: #fff !important;
+}
+
+/* Nút nhỏ (upload/remove) */
+.section.profile .btn-sm.btn-primary {
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+  color: #fff !important;
+}
+.section.profile .btn-sm.btn-primary:hover {
+  background-color: #157347 !important;
+}
+
+/* Link mạng xã hội */
+.section.profile .social-links a {
+  color: #198754 !important;
+  border-color: #198754 !important;
+}
+.section.profile .social-links a:hover {
+  background-color: #198754 !important;
+  color: #fff !important;
+}
+
+/* Input focus */
+.section.profile input:focus,
+.section.profile textarea:focus {
+  border-color: #198754 !important;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25) !important;
+}
+
+/* Checkbox */
+.section.profile .form-check-input:checked {
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+}
+
+/* Tab viền dưới khi active */
+.section.profile .nav-tabs-bordered .nav-link.active {
+  border-bottom: 2px solid #198754 !important;
+}
+
+/* Nút focus */
+.section.profile button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.4) !important;
+}
+/* Tắt viền focus cho toàn bộ nút, link, tab trong phần profile */
+.section.profile .nav-link:focus,
+.section.profile .btn:focus,
+.section.profile button:focus,
+.section.profile a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ==== PROFILE PAGE ENHANCEMENTS ==== */
+.section.profile {
+  background-color: #e9ecef;
+  padding: 40px 0;
+  color: #212529;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card thông tin bên trái (avatar + tên) */
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #198754;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #198754;
+  margin-bottom: 5px;
+}
+
+.profile-card span {
+  color: #495057;
+  font-size: 15px;
+}
+
+/* Tabs */
+.profile .nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.profile .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  color: #198754;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.profile .nav-tabs .nav-link.active,
+.profile .nav-tabs .nav-link:hover {
+  color: #fff !important;
+  background-color: #198754;
+  border-color: #198754;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+/* Tắt viền focus khi click */
+.section.profile .nav-link:focus,
+.section.profile .btn:focus,
+.section.profile button:focus,
+.section.profile a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+/* Khoảng cách tổng thể */
+.profile .row + .row {
+  margin-top: 12px;
+}
+/* Tăng khoảng cách dọc giữa các dòng thông tin */
+.section.profile .row {
+  margin-bottom: 18px; /* tăng từ 12px → 18px hoặc 24px nếu muốn rộng hơn */
+}
+
+/* Nếu dùng .row + .row selector ở trên thì đổi thành: */
+.profile .row + .row {
+  margin-top: 18px;
+}
+
+/* Ảnh đại diện (hình vuông, viền + bóng đổ) */
+.col-md-8.col-lg-9 img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px; /* bo nhẹ 8px cho mềm góc, bỏ nếu muốn vuông tuyệt đối */
+  border: 2px solid #ccc; /* viền xám nhạt */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* đổ bóng xám đen */
+  background-color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Nút upload (xanh lục) */
+.btn.btn-primary.btn-sm {
+  background-color: #198754;
+  border-color: #198754;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn.btn-primary.btn-sm:hover {
+  background-color: #157347;
+  border-color: #157347;
+}
+
+/* Nút xóa (viền đỏ, nền trắng) */
+.btn.btn-danger.btn-sm {
+  background-color: #fff;
+  color: #dc3545;
+  border: 2px solid #198754;
+  transition: 0.3s;
+}
+
+.btn.btn-danger.btn-sm:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Khoảng cách giữa nút */
+.pt-2 a {
+  margin-right: 6px;
+}
+
+/* Label ảnh đại diện */
+.col-form-label {
+  font-weight: 600;
+  color: #198754;
+}
+
+/* Làm đồng bộ select và input */
+.form-select,
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 15px;
+  color: #198754; /* chữ xanh lục */
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+/* Khi focus */
+.form-select:focus,
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.25);
+  outline: none;
+}
+
+/* Màu khi mở dropdown */
+.form-select option {
+  color: #198754;
+  background-color: #fff;
+}
+
+/* Tùy chọn khi hover */
+.form-select option:hover {
+  background-color: #e9ecef;
+  color: #198754;
+}
+
+/* Nền khi đang chọn */
+.form-select option:checked {
+  background-color: #198754;
+  color: white;
+}
+	
+
+

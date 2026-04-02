@@ -1,0 +1,62 @@
+
+/* Toàn bảng */
+.bang {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin-top: 10px;
+}
+
+/* Hàng tiêu đề */
+.bang thead th {
+  background-color: #f4f6fb;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 10px;
+  border-bottom: 2px solid #dee2e6;
+  white-space: nowrap;
+}
+
+/* Hàng dữ liệu */
+.bang tbody tr {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+/* Hiệu ứng hover */
+.bang tbody tr:hover {
+  background-color: #f9fafe;
+  transform: scale(1.01);
+}
+
+/* Ô dữ liệu */
+.bang tbody td {
+  text-align: center;
+  padding: 10px 8px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Bo tròn nhẹ */
+.bang tbody tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+.bang tbody tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+.bang tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.bang tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* Tiêu đề thẻ card */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #37517e;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>hotelgr4</display-name>
+  <welcome-file-list>
+    <welcome-file>customer/login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <servlet-name>LoginFacebookController</servlet-name>
+    <servlet-class>controller.LoginFacebookController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginFacebookController</servlet-name>
+    <url-pattern>/login-facebook</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>LoginFacebookCallbackController</servlet-name>
+    <servlet-class>controller.LoginFacebookCallbackController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginFacebookCallbackController</servlet-name>
+    <url-pattern>/login-facebook-callback</url-pattern>
+</servlet-mapping>
+  
+  <servlet>
+	<servlet-name>LoginGoogleController</servlet-name>
+	<servlet-class>controller.LoginGoogleController</servlet-class>
+</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginGoogleController</servlet-name>
+		<url-pattern>/login-google</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginGoogleCallbackController</servlet-name>
+		<servlet-class>controller.LoginGoogleCallbackController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginGoogleCallbackController</servlet-name>
+		<url-pattern>/login-google-callback</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+        <servlet-name>ajaxServlet</servlet-name>
+        <servlet-class>com.vnpay.common.ajaxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ajaxServlet</servlet-name>
+        <url-pattern>/payment</url-pattern>
+    </servlet-mapping>
+    
+  <servlet>
+        <servlet-name>vnpayReturn</servlet-name>
+        <servlet-class>com.vnpay.common.vnpayReturn</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>vnpayReturn</servlet-name>
+        <url-pattern>/vnpayReturn</url-pattern>
+    </servlet-mapping>
+    
+  
+  <servlet>
+    <servlet-name>BookingController</servlet-name>
+    <servlet-class>controller.BookingController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BookingController</servlet-name>
+    <url-pattern>/booking</url-pattern>
+</servlet-mapping>  
+   
+  
+ <servlet>
+    <servlet-name>EventsController</servlet-name>
+    <servlet-class>controller.EventsController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>EventsController</servlet-name>
+    <url-pattern>/events</url-pattern>
+</servlet-mapping>  
+  
+  
+<servlet>
+    <servlet-name>RoomController</servlet-name>
+    <servlet-class>controller.RoomController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RoomController</servlet-name>
+    <url-pattern>/rooms</url-pattern>
+</servlet-mapping>  
+  
+<servlet>
+    <servlet-name>Room_TypeController</servlet-name>
+    <servlet-class>controller.Room_TypeController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Room_TypeController</servlet-name>
+    <url-pattern>/room_type</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>FloorController</servlet-name>
+    <servlet-class>controller.FloorController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>FloorController</servlet-name>
+    <url-pattern>/floors</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>CustomerController</servlet-name>
+	<servlet-class>controller.CustomerController</servlet-class>
+</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerController</servlet-name>
+		<url-pattern>/customers</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+    <servlet-name>Admin_EditProfileController</servlet-name>
+    <servlet-class>controller.Admin_EditProfileController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Admin_EditProfileController</servlet-name>
+    <url-pattern>/admin-profile-edit</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>AdminProfileController</servlet-name>
+    <servlet-class>controller.AdminProfileController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminProfileController</servlet-name>
+    <url-pattern>/profile-admin</url-pattern>
+</servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Cus_EditProfileController</servlet-name>
+    <servlet-class>controller.Cus_EditProfileController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Cus_EditProfileController</servlet-name>
+    <url-pattern>/profile-edit</url-pattern>
+</servlet-mapping>
+  
+  
+  <servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>controller.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Cus_HomeController</servlet-name>
+		<servlet-class>controller.Cus_HomeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cus_HomeController</servlet-name>
+		<url-pattern>/trangchu</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>controller.RegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AccountController</servlet-name>
+		<servlet-class>controller.AccountController</servlet-class>
+		<multipart-config>
+	        <max-file-size>10485760</max-file-size> <!-- 10MB -->
+	        <max-request-size>20971520</max-request-size> <!-- 20MB -->
+	        <file-size-threshold>0</file-size-threshold>
+    	</multipart-config>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccountController</servlet-name>
+		<url-pattern>/accounts</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HomeController</servlet-name>
+		<servlet-class>controller.HomeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HomeController</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Acc_DetailController</servlet-name>
+		<servlet-class>controller.Acc_DetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Acc_DetailController</servlet-name>
+		<url-pattern>/accdetail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Cus_RoomTypeController</servlet-name>
+		<servlet-class>controller.Cus_RoomTypeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cus_RoomTypeController</servlet-name>
+		<url-pattern>/viewrooms</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Cus_RoomTypeDetailController</servlet-name>
+		<servlet-class>controller.Cus_RoomTypeDetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cus_RoomTypeDetailController</servlet-name>
+		<url-pattern>/roomdetail</url-pattern>
+	</servlet-mapping>
+</web-app>
